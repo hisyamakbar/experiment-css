@@ -59,3 +59,24 @@ body {
   background: rgba(47, 47, 47, 0.3);
   border-radius: 4px;
 }
+
+.hero-section {
+  position: relative;
+  display: flex;
+  padding: 60px;
+}
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.photo-section img {
+  width: 900px;
+}
+
+.photo-section {
+  z-index: -1;
+  margin-top: -150px;
+  margin-right: -300px;
+}
