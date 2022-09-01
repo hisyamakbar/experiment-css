@@ -11,6 +11,11 @@ body {
   margin: 0 161px;
 }
 
+/* alternatives:
+.btn-tertiary 
+.button-tertiary
+.button.tertiary */
+
 .tertiary-btn {
   color: #33cc99;
   font-weight: 600;
