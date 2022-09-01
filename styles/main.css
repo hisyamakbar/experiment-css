@@ -7,9 +7,20 @@
 body {
   font-family: "Inter", sans-serif;
   background-color: #2f2f2f;
-  margin: 0px 161px;
+  overflow-x: hidden;
+  margin: 0 161px;
 }
 
+.tertiary-btn {
+  color: #33cc99;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.005em;
+  text-decoration: none;
+}
+
+/* Nanbar */
 .navbar {
   display: flex;
   align-items: center;
@@ -24,7 +35,6 @@ body {
 }
 
 .navbar img {
-  position: absolute;
   width: 42px;
   height: 42px;
   left: 161px;
@@ -60,23 +70,268 @@ body {
   border-radius: 4px;
 }
 
+/* Hero Section */
 .hero-section {
-  position: relative;
+  align-items: left;
+  justify-content: space-around;
   display: flex;
-  padding: 60px;
+  gap: 32px;
+  flex-direction: column;
+  margin-top: 104px;
 }
 .profile-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 16px;
+}
+
+.profile-section .hero-description {
+  width: 523px;
+  height: 95px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  /* or 150% */
+
+  letter-spacing: -0.01em;
+
+  color: #ffff;
+}
+
+.profile-section .hero-subline {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+
+  letter-spacing: 0.005em;
+
+  color: #ffffff;
+}
+
+.profile-section .hero-subline span {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+
+  padding: 0px 16px;
+  gap: 8px;
+
+  width: 202px;
+  height: 32px;
+
+  letter-spacing: -0.01em;
+
+  background-color: #ffff;
+  border-radius: 99px;
+  margin-left: 8px;
+
+  color: #2f2f2f;
+}
+
+.profile-section h1 {
+  font-family: "Chillax";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 72px;
+  /* identical to box height, or 100% */
+
+  letter-spacing: -0.005em;
+
+  color: #ffffff;
+}
+
+.hero-section hr {
+  width: 140px;
+
+  border: 0, 5px solid #ffffff;
+
+  border-radius: 99px;
+}
+
+.hero-btn {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.hero-btn .primary-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 4px;
+
+  color: #ffff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.005em;
+  text-decoration: none;
+
+  background: #33cc99;
+  border-radius: 4px;
+
+  width: 209px;
+  height: 60px;
+}
+
+.hero-btn .tertiary-btn {
+  color: #33cc99;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.005em;
+  text-decoration: none;
 }
 
 .photo-section img {
+  position: absolute;
+  left: 1200px;
   width: 900px;
+  top: -50px;
+  z-index: -1;
+
+  border-radius: 0px 0px 0px 100px;
 }
 
-.photo-section {
-  z-index: -1;
-  margin-top: -150px;
-  margin-right: -300px;
+/* Section-1 */
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 64px 160px;
+  gap: 8px;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 45px;
+  margin-top: 450px;
+  margin-bottom: 200px;
+  justify-content: space-between;
+}
+
+.section-1 h2 {
+  width: 523px;
+  height: 222px;
+
+  font-family: "Chillax";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 74px;
+  /* or 116% */
+
+  letter-spacing: -0.045em;
+
+  color: #ffffff;
+}
+
+.content-1 {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 40px;
+}
+
+.content-1-desc {
+  width: 551px;
+  height: 69px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #cecece;
+}
+
+.card-pack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-pack .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  gap: 16px;
+
+  width: 551px;
+  height: 56px;
+
+  background: linear-gradient(
+    143.53deg,
+    rgba(255, 255, 255, 0.2) -90.47%,
+    rgba(255, 255, 255, 0) 215.56%
+  );
+  /* Neutral/500 */
+
+  border: 1px solid #babec1;
+  backdrop-filter: blur(74px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 12px;
+}
+
+.card-pack .card div {
+  flex-grow: 1;
+}
+
+.card-pack .card div p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #ffffff;
+}
+
+.arrow {
+  width: 17px;
+  height: 10px;
+}
+
+/* Section 2 */
+.section-2 {
+  display: ;
+}
+
+.section-2 .section-2-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-2-desc h3 {
+  font-family: "Chillax";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 67px;
+}
+
+.section-2-desc p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
 }
